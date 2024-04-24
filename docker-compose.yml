@@ -1,0 +1,10 @@
+
+services:  
+  app:
+    build: 
+      dockerfile: Dockerfile
+    container_name: app
+    volumes: 
+      - .:/app
+    ports:
+      - "50051:50051"
